@@ -1,0 +1,45 @@
+{
+  "name": "oracle-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
+    "@nomicfoundation/hardhat-toolbox-viem": "^2.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.0",
+    "@nomicfoundation/hardhat-viem": "^1.0.0",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@types/chai": "^4.2.0",
+    "@types/chai-as-promised": "^7.1.6",
+    "@types/mocha": ">=9.1.0",
+    "@types/node": ">=16.0.0",
+    "chai": "^4.2.0",
+    "hardhat": "^2.14.0",
+    "hardhat-gas-reporter": "^1.0.8",
+    "solidity-coverage": "^0.8.0",
+    "ts-node": ">=8.0.0",
+    "typescript": "~5.0.4",
+    "viem": "^1.15.1"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.0.0",
+    "@chainlink/contracts": "^0.5.1",
+    "@chainlink/hardhat-chainlink": "^0.0.2",
+    "witnet-solidity-bridge": "0.6.1",
+    "@typechain/ethers-v5": "11.1.2",
+    "ado-contracts": "^1.0.0",
+    "typechain": "^8.3.2",
+    "dotenv": "^16.3.1"
+  },
+  "scripts": {
+    "deploy": "npx hardhat run scripts/deploy.ts --network mumbai",
+    "run": "npx hardhat run scripts/deploy.ts",
+    "console": "npx hardhat console",
+    "verify": "npx hardhat verify",
+    "compile": "npx hardhat compile",
+    "clean": "npx hardhat clean",
+    "check": "npx hardhat check",
+    "test": "npx hardhat test",
+    "node": "npx hardhat node"
+  }
+}
